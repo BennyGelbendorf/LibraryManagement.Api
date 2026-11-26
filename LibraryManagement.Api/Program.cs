@@ -12,6 +12,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+// redirect HTTP requests to HTTPS
 app.UseHttpsRedirection();
 
 var summaries = new[]
